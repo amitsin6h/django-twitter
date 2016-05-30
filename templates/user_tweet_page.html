@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ username }} | Django Twitter</title>
+		</head>
+		<body>
+			<h1>Tweets of {{ username }}</h1>
+			{% if tweets %}
+			
+			{% for tweet in tweets %}
+			<ul>{{ tweet.tweet }}</ul>
+			{% endfor %}
+			{% else %}
+			<h2>{{ username }} Make Your First Tweet!!</h2>
+			{% endif %}
+		</body>
+</html>

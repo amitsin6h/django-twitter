@@ -1,0 +1,141 @@
+{% load staticfiles %}
+{% load i18n %}
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 ie8" lang="en" data-scribe-reduced-action-queue="true"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="en" data-scribe-reduced-action-queue="true"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html data-scribe-reduced-action-queue="true" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    
+    
+    
+    
+    
+    
+    <meta charset="utf-8">
+    
+    <noscript><meta http-equiv="refresh" content="0; URL=https://mobile.twitter.com/i/nojs_router?path=%2Flogin"></noscript>
+    
+    
+  
+  <script src="{% static 'js/analytics.js' %}" async=""></script>
+  <script src="{% static 'js/boot.js' %}" async="" type="text/javascript" id="LR85"></script>
+  <script src="{% static 'js/frontpage.js' %}" async="" type="text/javascript" id="LR5"></script>
+  <script id="bouncer_terminate_iframe" nonce="/2kd5oCriUVRNF959QcTgQ==">
+    if (window.top != window) {
+  window.top.postMessage({'bouncer': true, 'event': 'complete'}, '*');
+}
+  </script>
+ 
+  
+
+    <link rel="stylesheet" href="{% static 'css/twitter_core.css' %}">
+  <link rel="stylesheet" href="{% static 'css/twitter_more_1.css' %}">
+  <link rel="stylesheet" href="{% static 'css/twitter_more_2.css' %}">
+
+    <link rel="dns-prefetch" href="https://pbs.twimg.com/">
+    <link rel="dns-prefetch" href="https://t.co/">
+      <link rel="preload" href="{% static 'js/init.js' %}" as="script">
+      <link rel="preload" href="https://abs.twimg.com/c/swift/en/bundle/timeline.5efcd5a734c578acc6ba15992c4d107d96fb13ec.js" as="script">
+      <link rel="preload" href="{% static 'js/boot.js' %}" as="script">
+
+      <title>Login on Twitter</title>
+      <meta name="robots" content="NOODP">
+  <meta name="description" content="Welcome back to Twitter. Sign in now to check your notifications, join the conversation and catch up on Tweets from the people you follow.">
+
+
+
+<meta name="msapplication-TileImage" >
+<meta name="msapplication-TileColor" content="#00aced">
+
+
+<link rel="mask-icon" sizes="any" href="https://abs.twimg.com/a/1459994215/img/t1/favicon.svg" color="#55acee">
+
+  <link href="https://abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <meta name="swift-page-name" id="swift-page-name" content="login">
+
+    <link rel="canonical" href="https://twitter.com/login">
+  <link rel="alternate" hreflang="x-default" href="https://twitter.com/login">
+  
+
+
+  <link rel="alternate" media="handheld, only screen and (max-width: 640px)" href="https://mobile.twitter.com/session/new">
+
+      <link rel="alternate" href="android-app://com.twitter.android/twitter/login?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eandroidseo%7Ctwgr%5Elogin">
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://twitter.com/opensearch.xml" title="Twitter">
+
+    <link id="async-css-placeholder">
+
+      </head><body class="three-col logged-out" data-fouc-class-names="swift-loading" dir="ltr">
+
+  
+
+    
+
+  
+    <script src="{% static 'js/init.js' %}" async=""></script>
+
+  
+  
+    
+   <div id="doc" class="route-login login-responsive">
+        <div class="topbar js-topbar">
+
+
+  <div class="global-nav global-nav--newLoggedOut" data-section-term="top_nav">
+    <div class="global-nav-inner">
+      <div class="container">
+
+        
+<ul class="nav js-global-actions" role="navigation" id="global-actions">
+  <li id="global-nav-home" class="home" data-global-action="home">
+    <a data-original-title="" class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/" data-component-context="home_nav" data-nav="home">
+     
+      <span class="text">Home</span>
+    </a>
+  </li>
+    <li id="global-nav-about" class="about" data-global-action="about">
+      <a class="js-tooltip js-dynamic-tooltip" data-placement="bottom" href="https://twitter.com/about" target="_blank" data-component-context="about_nav" data-nav="about">
+        <span class="text">About</span>
+      </a>
+    </li>
+</ul>
+<div class="pull-right">
+
+  <ul class="nav secondary-nav language-dropdown">
+    <li class="dropdown js-language-dropdown">
+      <a aria-haspopup="true" role="button" href="#" class="dropdown-toggle js-dropdown-toggle">
+        <small>Language:</small> <span class="js-current-language">English</span> <b class="caret"></b>
+      </a>
+
+    </li>
+  </ul>
+
+   
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+       
+      
+    {% block content %}
+    {% endblock %}
+    
+    
+    
+    </div>
+  
+
+<div id="sr-event-log" class="visuallyhidden" aria-live="assertive"></div>
+</body>
+</html>

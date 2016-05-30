@@ -1,0 +1,1373 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 ie8" lang="en" data-scribe-reduced-action-queue="true"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="en" data-scribe-reduced-action-queue="true"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html data-scribe-reduced-action-queue="true" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    
+    
+    
+    
+    
+    
+    <meta charset="utf-8">
+    
+    
+    
+  
+  
+  
+
+
+    <link rel="stylesheet" href="{% static 'css/twitter_core.css' %}">
+  <link rel="stylesheet" href="{% static 'css/twitter_more_1.css' %}">
+  <link rel="stylesheet" href="{% static 'css/twitter_more_2.css' %}">
+
+      <link rel="preload" href="{% static 'js/init.js' %}" as="script">
+      <link rel="preload" href="{% static 'js/timeline.js' %}" as="script">
+      <link rel="preload" href="{% static 'js/boot.js' %}" as="script">
+
+      <title>{% for user_profile in profile %}{{user_profile.name}}{% endfor %} @{{ user.username }} | Django Twitter</title>
+    
+
+
+<meta name="msapplication-TileImage" content="//abs.twimg.com/favicons/win8-tile-144.png">
+<meta name="msapplication-TileColor" content="#00aced">
+
+
+<link rel="mask-icon" sizes="any" href="https://abs.twimg.com/a/1459994215/img/t1/favicon.svg" color="#55acee">
+
+  <link href="https://abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+<link rel="manifest" href="https://twitter.com/manifest.json">
+
+
+  <meta name="swift-page-name" id="swift-page-name" content="me">
+
+    <link rel="canonical" href="https://twitter.com/amitsin6h">
+  
+  
+
+
+  
+
+
+
+
+    <link id="async-css-placeholder">
+      
+<style id="user-style-amitsin6h">
+
+
+
+
+
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    color: #0084B4;
+  }
+
+  .u-textUserColor,
+  .u-textUserColorHover:hover,
+  .u-textUserColorHover:focus {
+    color: #0084B4 !important;
+  }
+
+  .u-borderUserColor,
+  .u-borderUserColorHover:hover,
+  .u-borderUserColorHover:focus {
+    border-color: #0084B4 !important;
+  }
+
+  .u-bgUserColor,
+  .u-bgUserColorHover:hover,
+  .u-bgUserColorHover:focus {
+    background-color: #0084B4 !important;
+  }
+
+
+  .u-dropdownUserColor > li:hover,
+  .u-dropdownUserColor > li:focus,
+  .u-dropdownUserColor > li > button:hover,
+  .u-dropdownUserColor > li > button:focus {
+    color: #fff !important;
+    background-color: #0084B4 !important;
+  }
+
+  .u-boxShadowInsetUserColorHover:hover,
+  .u-boxShadowInsetUserColorHover:focus {
+    box-shadow: inset 0 0 0 5px #0084B4 !important;
+  }
+
+
+
+  .u-textUserColorLight {
+    color: #99CDE1 !important;
+  }
+
+  .u-borderUserColorLight,
+  .u-borderUserColorLightFocus:focus,
+  .u-borderUserColorLightHover:hover,
+  .u-borderUserColorLightHover:focus {
+    border-color: #99CDE1 !important;
+  }
+
+  .u-bgUserColorLight {
+    background-color: #99CDE1 !important;
+  }
+
+
+  .u-boxShadowUserColorLighterFocus:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05), inset 0 1px 2px rgba(0,132,180,0.25) !important;
+  }
+
+
+  .u-textUserColorLightest {
+    color: #E5F2F7 !important;
+  }
+
+  .u-borderUserColorLightest {
+    border-color: #E5F2F7 !important;
+  }
+
+  .u-bgUserColorLightest {
+    background-color: #E5F2F7 !important;
+  }
+
+
+  .u-textUserColorLighter {
+    color: #BFE0EC !important;
+  }
+
+  .u-borderUserColorLighter {
+    border-color: #BFE0EC !important;
+  }
+
+  .u-bgUserColorLighter {
+    background-color: #BFE0EC !important;
+  }
+
+
+  .u-bgUserColorDarkHover:hover {
+    background-color: #006990 !important;
+  }
+
+  .u-borderUserColorDark {
+    border-color: #006990 !important;
+  }
+
+
+  .u-bgUserColorDarkerActive:active {
+    background-color: #004F6C !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a,
+.btn-link,
+.btn-link:focus,
+.icon-btn,
+
+
+
+.pretty-link b,
+.pretty-link:hover s,
+.pretty-link:hover b,
+.pretty-link:focus s,
+.pretty-link:focus b,
+/* Account Group */
+.metadata a:hover,
+.metadata a:focus,
+
+.account-group:hover .fullname,
+.account-group:focus .fullname,
+.account-summary:focus .fullname,
+
+.message .message-text a,
+.stats a strong,
+.plain-btn:hover,
+.plain-btn:focus,
+.dropdown.open .user-dropdown.plain-btn,
+.open > .plain-btn,
+#global-actions .new:before,
+.module .list-link:hover,
+.module .list-link:focus,
+
+.stats a:hover,
+.stats a:hover strong,
+.stats a:focus,
+.stats a:focus strong,
+
+.profile-modal-header .fullname a:hover,
+.profile-modal-header .username a:hover,
+.profile-modal-header .fullname a:focus,
+.profile-modal-header .username a:focus,
+
+.find-friends-sources li:hover .source,
+
+
+
+
+
+.stream-item a:hover .fullname,
+.stream-item a:focus .fullname,
+
+.stream-item .view-all-supplements:hover,
+.stream-item .view-all-supplements:focus,
+
+.tweet .time a:hover,
+.tweet .time a:focus,
+.tweet .details.with-icn b,
+.tweet .details.with-icn .Icon,
+.tweet .tweet-geo-text a:hover,
+
+.stream-item:hover .original-tweet .details b,
+.stream-item .original-tweet.focus .details b,
+.stream-item.open .original-tweet .details b,
+
+.client-and-actions a:hover,
+.client-and-actions a:focus,
+
+.dismiss-btn:hover b,
+
+.tweet .context .pretty-link:hover s,
+.tweet .context .pretty-link:hover b,
+.tweet .context .pretty-link:focus s,
+.tweet .context .pretty-link:focus b,
+
+.list .username a:hover,
+.list .username a:focus,
+.list-membership-container .create-a-list,
+.list-membership-container .create-a-list:hover,
+
+
+
+.card .list-details a:hover,
+.card .list-details a:focus,
+.card .card-body:hover .attribution,
+.card .card-body .attribution:focus,
+.new-tweets-bar,
+.onebox .soccer ul.ticker a:hover,
+.onebox .soccer ul.ticker a:focus,
+
+
+
+.remove-background-btn,
+
+
+
+.stream-item-activity-notification .latest-tweet .tweet-row a:hover,
+.stream-item-activity-notification .latest-tweet .tweet-row a:focus,
+.stream-item-activity-notification .latest-tweet .tweet-row a:hover b,
+.stream-item-activity-notification .latest-tweet .tweet-row a:focus b {
+    color: #0084B4;
+}
+
+
+
+    #global-actions > li > a {
+      border-bottom-color: #0084B4;
+    }
+
+    #global-actions > li:hover > a,
+    #global-actions > li > a:focus,
+    .nav.right-actions > li > a:hover,
+    .nav.right-actions > li > button:hover,
+    .nav.right-actions > li > a:focus,
+    .nav.right-actions > li > button:focus {
+      color: #0084B4;
+    }
+
+    /* Surpress the new connect glow if in experiment. */
+     #global-actions .people.new:before {
+       content: none;
+     }
+
+  /* hover state for found media items */
+  .FoundMediaSearch--keyboard .FoundMediaSearch-focusable.is-focused {
+    border-color: #0084B4;
+  }
+
+  /* hover state for photo select button*/
+  .photo-selector:hover .btn,
+  .icon-btn:hover,
+  .icon-btn:active,
+  .icon-btn.active,
+  .icon-btn.enabled {
+    border-color: #0084B4;
+    border-color: rgba(0,132,180,.5);
+    color: #0084B4;
+  }
+
+  /* hover state for photo select button*/
+  .photo-selector:hover .btn,
+  .icon-btn:hover {
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(0,132,180,.1));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00FFFFFF', endColorstr='#190084B4'); /* IE8-9 */
+  }
+
+  .icon-btn.disabled,
+  .icon-btn.disabled:hover,
+  .icon-btn[disabled],
+  .icon-btn[aria-disabled=true] {
+    color: #0084B4;
+  }
+
+  /* tweet-btn can have primary-btn class as well so the following rules ensure that the correct background color is applied */
+  .tweet-btn,
+  .tweet-btn:focus {
+    background-color: #0084B4;
+    background: rgba(0,132,180,.8);
+  }
+
+  .tweet-btn:hover,
+  .tweet-btn:active,
+  .tweet-btn.active {
+    background-color: #0084B4;
+  }
+
+  .tweet-btn.btn.disabled,
+  .tweet-btn.btn.disabled:hover,
+  .tweet-btn.btn[disabled],
+  .tweet-btn.btn[aria-disabled=true] {
+    background: #0084B4;
+  }
+
+  .btn:focus,
+  .btn.focus,
+  .Button:focus {
+    box-shadow:
+      0 0 0 1px #fff,
+      0 0 0 3px rgba(0, 132, 180, 0.5);
+  }
+
+  .selected-stream-item:focus {
+    box-shadow: 0 0 0 3px rgba(0, 132, 180, 0.5);
+  }
+
+  /* highlighting when navigate through timeline stream table view with j & k. */
+  .js-navigable-stream.stream-table-view .selected-stream-item[tabindex="-1"]:focus {
+    outline: 3px solid rgba(0, 132, 180, 0.5) !important;
+  }
+
+  /* box-shadow does not work with table tr element */
+  .js-navigable-stream.stream-table-view .selected-stream-item:focus {
+    box-shadow: none;
+  }
+
+  /**
+   * 1. Bring actionable tweet to top when active to ensure border
+   *    highlighting wraps entire tweet. Value must be at least at if not
+   *    higher than the z-index value of ProfileHeading to ensure first
+   *    tweet in timeline receives border on all four sides.
+   *    NOTE: z-index should be 2 to avoid conflicts with .ProfileCanopy and .ProfileCard-avatarLink
+   */
+
+  .js-stream-item.is-selected:focus .ProfileCard,
+  .QuoteTweet:hover,
+  .QuoteTweet:focus,
+  .QuoteTweet:active,
+  .activity-user-profile-content:hover,
+  .activity-user-profile-content:focus,
+  .activity-user-profile-content:active {
+    border-color: rgba(0, 132, 180, 0.5);
+    z-index: 2; /* 1 */
+  }
+
+  .global-dm-nav.new.with-count .dm-new {
+    background: #fff;
+  }
+
+  .global-dm-nav.new.with-count .dm-new .count-inner {
+    background: #0084B4;
+  }
+
+  .global-nav .people .count .count-inner {
+    background: #0084B4;
+  }
+
+  .dropdown-menu li > a:hover,
+  .dropdown-menu li > a:focus,
+  .dropdown-menu .dropdown-link:hover,
+  .dropdown-menu .dropdown-link:focus,
+  .dropdown-menu .dropdown-link.is-focused,
+  .dropdown-menu li:hover .dropdown-link,
+  .dropdown-menu li:focus .dropdown-link,
+  .dropdown-menu .typeahead-recent-search-item.selected,
+  .dropdown-menu .typeahead-saved-search-item.selected,
+  .dropdown-menu .selected a,
+  .dropdown-menu .dropdown-link.selected {
+    background-color: #0084B4 !important;
+  }
+
+/* give tweet boxes 10% of the users link color as background */
+.home-tweet-box,
+.RetweetDialog-commentBox,
+.WebToast-box--altColor,
+.content-main .conversations-enabled .expansion-container .inline-reply-tweetbox {
+  background-color: #E5F2F7;
+}
+
+.conversations-enabled .inline-reply-caret .caret-inner {
+  border-bottom-color: #E5F2F7;
+}
+.top-timeline-tweetbox .timeline-tweet-box .tweet-form.condensed .tweet-box {
+  color: #0084B4;
+}
+/* give tweet box containers an outline using the users link color */
+.RichEditor {
+  border-color: #BFE0EC;
+}
+/* give tweet boxes an outline using the users link color */
+.tweet-compose-errors {
+  border-color: rgba(0,132,180,0.25);
+}
+
+input:focus,
+textarea:focus,
+div[contenteditable="true"]:focus,
+div[contenteditable="true"].fake-focus {
+  border-color: #66B5D2;
+  box-shadow: inset 0 0 0 1px rgba(0, 132, 180, 0.7);
+}
+
+.tweet-box textarea:focus,
+.tweet-box input[type=text],
+.currently-dragging .tweet-form.is-droppable .tweet-drag-help,
+.tweet-box[contenteditable="true"]:focus,
+.RichEditor.is-fakeFocus {
+  border-color: #99CDE1;
+  box-shadow: none;
+}
+
+
+
+
+s,
+.pretty-link:hover s,
+.pretty-link:focus s,
+.stream-item-activity-notification .latest-tweet .tweet-row a:hover s,
+.stream-item-activity-notification .latest-tweet .tweet-row a:focus s {
+    color: #0084B4;
+}
+
+
+
+.vellip,
+.vellip:before,
+.vellip:after,
+.conversation-module > li:after,
+.conversation-module > li:before,
+.ThreadedConversation-tweet ~ .ThreadedConversation-tweet:before,
+.ThreadedConversation-tweet:after,
+.ThreadedConversation-viewOther:before,
+.ThreadedConversation-unavailableTweet:before,
+.ThreadedConversation-unavailableTweet:after {
+    background-color: #66B5D2;
+}
+
+
+
+
+.tweet .sm-reply,
+.tweet .sm-rt,
+.tweet .sm-fav,
+.tweet .sm-image,
+.tweet .sm-video,
+.tweet .sm-audio,
+.tweet .sm-geo,
+.tweet .sm-in,
+.tweet .sm-trash,
+.tweet .sm-more,
+.tweet .sm-page,
+.tweet .sm-embed,
+.tweet .sm-summary,
+.tweet .sm-chat,
+
+.timelines-navigation .active .profile-nav-icon,
+.timelines-navigation .profile-nav-icon:hover,
+.timelines-navigation .profile-nav-link:focus .profile-nav-icon,
+
+.sm-top-tweet,
+
+.metadata a.tweet-geo-text:hover .sm-geo {
+    background-color: #0084B4;
+}
+
+.enhanced-mini-profile .mini-profile .profile-summary {
+  background-image: url(https://abs.twimg.com/a/1459994215/img/t1/grey_header_web.jpg);
+}
+
+.wrapper-profile .profile-card.profile-header .profile-header-inner {
+  background-image: url(https://abs.twimg.com/a/1459994215/img/t1/grey_header_web.jpg);
+}
+
+  #global-tweet-dialog .modal-header {
+    border-bottom: solid 1px rgba(0, 132, 180, .25);
+  }
+
+  #global-tweet-dialog .modal-tweet-form-container {
+    background-color: #0084B4;
+    background: rgba(0, 132, 180, .1);
+  }
+
+  .inline-reply-tweetbox {
+    background-color: #E5F2F7;
+  }
+
+</style>
+
+
+<style id="user-style-amitsin6h-header-img" class="js-user-style-header-img">
+
+    body.user-style-amitsin6h .enhanced-mini-profile .mini-profile .profile-summary {
+      background-image: url(https://abs.twimg.com/a/1459994215/img/t1/grey_header_web.jpg);
+    }
+
+    body.user-style-amitsin6h .wrapper-profile .profile-card.profile-header .profile-header-inner {
+      background-image: url(https://abs.twimg.com/a/1459994215/img/t1/grey_header_web.jpg);
+    }
+
+
+    body.user-style-amitsin6h .profile-canopy .bg-img {
+      background-image: url(https://abs.twimg.com/a/1459994215/img/t1/grey_header_web_retina.jpg);
+    }
+
+</style>
+
+
+
+      <style id="hidden-dms" type="text/css"></style>
+	  </head>
+	  <body class="three-col logged-in user-style-amitsin6h enhanced-mini-profile ProfilePage ProfilePage--withBlockedWarning supports-drag-and-drop" data-fouc-class-names="swift-loading" dir="ltr">
+
+  
+
+    <input class="swift-boot-module" value="app/pages/profile/highline_landing" type="hidden">
+  <input id="swift-module-path" value="https://abs.twimg.com/c/swift/en" type="hidden">
+
+  
+    <script src="{% static 'js/init.js' %}" async=""></script>
+
+  
+  
+     
+   
+
+   
+   
+
+   <div id="doc" class="route-profile">
+        <div class="topbar js-topbar">
+
+    
+    <div class="ProfilePage-editingOverlay"></div>
+
+
+  <div class="global-nav" data-section-term="top_nav">
+    <div class="global-nav-inner">
+      <div class="container">
+        
+<h1 class="Icon Icon--bird bird-topbar-etched" style="display: inline-block; width: 24px; height: 21px;">
+  <span class="visuallyhidden">Twitter</span>
+</h1><div class="pushstate-spinner"></div>
+
+  
+  <div role="navigation" style="display: inline-block;"><ul class="nav js-global-actions" id="global-actions"><li id="global-nav-home" class="home" data-global-action="home">
+        <a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="https://twitter.com/" data-component-context="home_nav" data-nav="home">
+          <span class="Icon Icon--home Icon--large"></span>
+          <span class="text">Home</span>
+        </a>
+      </li></ul>
+  </div>
+
+
+  <div class="pull-right" style="display: inline-block;"><div role="search">
+  <form class="t1-form form-search js-search-form" action="/search" id="global-nav-search">
+    <label class="visuallyhidden" for="search-query">Search query</label>
+    <input aria-owns="typeahead-dropdown-1" aria-expanded="false" aria-autocomplete="list" class="search-input" id="search-query" placeholder="Search Twitter" name="q" autocomplete="off" spellcheck="false" type="text">
+    <span class="search-icon js-search-action">
+      <button tabindex="-1" type="submit" class="Icon Icon--search nav-search">
+        <span class="visuallyhidden">Search Twitter</span>
+      </button>
+    </span>
+ 
+
+  </form>
+</div>
+<ul class="nav right-actions">
+	<li class="me dropdown session js-session" data-global-action="t1me" id="user-dropdown">
+        {% for user_profile in profile %}
+        <a aria-haspopup="true" role="button" href="{% url 'test_page' %}" class="btn js-tooltip settings dropdown-toggle js-dropdown-toggle" id="user-dropdown-toggle" title="Profile" >
+        <img class="avatar size32" src="{{ user_profile.image.url }}" ></a>
+        {% endfor %}
+      </li>
+	  
+	  <li role="complementary" aria-labelledby="global-new-tweet-button" class="topbar-tweet-btn">
+      <a data-original-title="" id="global-new-tweet-button" type="button" class="js-global-new-tweet js-tooltip btn primary-btn tweet-btn js-dynamic-tooltip" data-placement="bottom" data-component-context="new_tweet_button" href="{% url 'tweet_new' user.username %}"> <button >
+          <span class="Icon Icon--tweet Icon--large"></span>
+          <span class="text">Tweet</span>
+        </button></a>
+      </li>
+	  </ul>
+	  </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <div id="page-outer">
+          <div id="page-container" class="AppContent">
+              
+            
+
+
+
+      <div class="ProfilePage-editingOverlay"></div>
+
+      
+      <div class="ProfilePage-testForEditingCss"></div>
+    <div class="ProfileCanopy ProfileCanopy--withNav">
+  <div class="ProfileCanopy-inner">
+
+    <div style="margin-top: 0px;" class="ProfileCanopy-header u-bgUserColor">
+    <div class="ProfileCanopy-headerBg">
+      <img style="transform: none;" alt="" class="u-hidden">
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="AppContainer">
+
+    <div class="ProfileCanopy-avatar">
+      <div class="ProfileAvatar">
+    {% for user_profile in profile %}
+      <img class="ProfileAvatar-placeholderImage u-bgUserColor" data-avatar-placeholder="true" src="{{ user_profile.image.url }}" alt="Amit Singh">
+    }
+   
+  {% endfor %}
+</div>
+
+        
+
+    </div>
+
+      
+    <div class="ProfileCanopy-headerPromptAnchor"></div>
+  </div>
+
+</div>
+
+
+    <div class="ProfileCanopy-navBar">
+      <div class="ProfilePage-editingOverlay"></div>
+
+      <div class="AppContainer">
+        <div class="Grid Grid--withGutter">
+          <div class="Grid-cell u-size1of3 u-lg-size1of4">
+            <div aria-hidden="true" class="ProfileCanopy-card" role="presentation">
+              
+
+            </div>
+          </div>
+
+          <div class="Grid-cell u-size2of3 u-lg-size3of4">
+            <div class="ProfileCanopy-nav">
+              
+  <div class="ProfileNav" role="navigation" data-user-id="839102436">
+    <ul class="ProfileNav-list">
+<li class="ProfileNav-item ProfileNav-item--tweets is-active">
+          <a data-original-title="54 Tweets" class="ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav" data-nav="tweets" tabindex="0">
+            <span class="ProfileNav-label">Tweets</span>
+            <span class="ProfileNav-value" data-is-compact="false">{{ tweet.count }}</span>
+          </a>
+        </li><li class="ProfileNav-item ProfileNav-item--following">
+        <a data-original-title="77 Following" class="ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav u-textUserColor" data-nav="following" href="#">
+          <span class="ProfileNav-label">Following</span>
+          <span class="ProfileNav-value" data-is-compact="false">0</span>
+        </a>
+      </li><li class="ProfileNav-item ProfileNav-item--followers">
+        <a data-original-title="39 Followers" class="ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav u-textUserColor" data-nav="followers" href="#">
+          <span class="ProfileNav-label">Followers</span>
+          <span class="ProfileNav-value" data-is-compact="false">0</span>
+        </a>
+      </li><li class="ProfileNav-item ProfileNav-item--favorites" data-more-item=".ProfileNav-dropdownItem--favorites">
+        <a data-original-title="3 Likes" class="ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav u-textUserColor" data-nav="favorites" href="#">
+          <span class="ProfileNav-label">Likes</span>
+          <span class="ProfileNav-value" data-is-compact="false">0</span>
+        </a>
+      </li><li style="" class="ProfileNav-item ProfileNav-item--more dropdown is-hidden">        <a aria-haspopup="true" role="button" class="ProfileNav-stat ProfileNav-stat--link ProfileNav-stat--moreLink js-dropdown-toggle" href="#more">
+          <span class="ProfileNav-label">&nbsp;</span>
+          <span class="ProfileNav-value">More <span class="ProfileNav-dropdownCaret Icon Icon--caretDown"></span></span>
+        </a>
+        <div class="dropdown-menu">
+          <div class="dropdown-caret">
+            <span class="caret-outer"></span>
+            <span class="caret-inner"></span>
+          </div>
+          <ul><li>
+              <a style="" href="https://twitter.com/i/likes" class="ProfileNav-dropdownItem ProfileNav-dropdownItem--favorites is-hidden u-bgUserColorHover u-bgUserColorFocus u-linkClean js-nav">Likes</a></li></ul>
+        </div>
+      </li><li class="ProfileNav-item ProfileNav-item--userActions u-floatRight u-textRight with-rightCaret ">
+        <div class="UserActions   u-textLeft">
+      <button type="button" class="UserActions-editButton edit-button btn" data-scribe-element="profile_edit_button">
+        <span class="button-text">Edit profile</span>
+      </button>
+      
+
+</div>
+
+      </li>
+    </ul>
+  </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+    <div class="AppContainer">
+      <div class="AppContent-main content-main u-cf" role="main" aria-labelledby="content-main-heading">
+        <div class="Grid Grid--withGutter">
+          <div class="Grid-cell u-size1of3 u-lg-size1of4">
+            <div class="Grid Grid--withGutter">
+              <div class="Grid-cell">
+                <div class="ProfileSidebar ProfileSidebar--withLeftAlignment">
+  <div class="ProfileHeaderCard">
+  <h1 class="ProfileHeaderCard-name">{% for user_profile in profile %}
+    <a href="https://twitter.com/amitsin6h" class="ProfileHeaderCard-nameLink u-textInheritColor js-nav
+">{{ user_profile.name }}</a>
+{% endfor %}
+  </h1>
+
+  <h2 class="ProfileHeaderCard-screenname u-inlineBlock u-dir" dir="ltr">
+    <a class="ProfileHeaderCard-screennameLink u-linkComplex js-nav" href="https://twitter.com/amitsin6h">@<span class="u-linkComplex-target">{{ user.username }}</span></a>
+  </h2>
+
+    <p class="ProfileHeaderCard-bio u-dir" dir="ltr"></p>
+
+      <div class="ProfileHeaderCard-location u-hidden">
+        <span class="Icon Icon--geo Icon--medium"></span>
+        <span class="ProfileHeaderCard-locationText u-dir" dir="ltr">
+            
+        </span>
+      </div>
+
+      <div class="ProfileHeaderCard-url  u-hidden">
+        <span class="Icon Icon--url Icon--medium"></span>
+        <span class="ProfileHeaderCard-urlText u-dir" dir="ltr">
+</span>
+      </div>
+
+
+      <div class="ProfileHeaderCard-joinDate">
+        <span class="Icon Icon--calendar Icon--small"></span>
+        <span class="ProfileHeaderCard-joinDateText js-tooltip u-dir" dir="ltr" title="9:56 PM - 21 Sep 2012">Joined on {{ request.user.date_joined|date}}</span>
+      </div>
+
+    <div class="ProfileHeaderCard-birthdate u-hidden">
+      <span class="Icon Icon--balloon Icon--medium"></span>
+      <span class="ProfileHeaderCard-birthdateText u-dir" dir="ltr">
+</span>
+    </div>
+
+      <div class="ProfileMessagingActions">
+  <div class="ProfileMessagingActions-actionsContainer">
+  </div>
+</div>
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- <div data-loaded="true" style="display: block;" class="PhotoRail">
+  <div class="PhotoRail-heading">
+    <span class="Icon Icon--camera Icon--medium u-alignBottom"></span>
+    <span class="PhotoRail-headingText PhotoRail-headingText--withCount">
+            <a href="https://twitter.com/amitsin6h/media" class="PhotoRail-headingWithCount js-nav">
+                
+                15 Photos and videos
+            </a>
+          <a href="https://twitter.com/amitsin6h/media" class="PhotoRail-headingWithoutCount js-nav">
+            Photos and videos
+          </a>
+    </span>
+  </div>
+  <div class="PhotoRail-mediaBox">
+    <span href="/amitsin6h/media" class="tweet-media-img-placeholder js-nav" data-status-id="716966632183042048" data-image-url="https://pbs.twimg.com/media/CfMtKUXVAAEgjBh.jpg" data-img-alt="" data-load-status="loaded" data-tweet-id="716966632183042048" data-item-id="716966632183042048" data-permalink-path="/amitsin6h/status/716966632183042048" data-screen-name="amitsin6h" data-name="Amit Singh" data-user-id="839102436" data-you-follow="false" data-follows-you="false" data-you-block="false" data-disclosure-type="" data-has-cards="true">
+      <div class="media-overlay"></div>
+    <img alt="" style="height: 83px; width: 83px; margin-left: 0px; margin-top: 0px;" src="https://pbs.twimg.com/media/CfMtKUXVAAEgjBh.jpg:thumb"></span>
+
+     
+
+     
+
+      <span class="js-photoRailInsertPoint"></span>
+  </div>
+</div>-->
+
+
+
+</div>
+
+              </div>
+            </div>
+          </div>
+		  
+		  
+		  
+
+          <div class="Grid-cell u-size2of3 u-lg-size3of4">
+            <div class="Grid Grid--withGutter">
+                <div class="Grid-cell">
+                  <div class="js-profileClusterFollow"></div>
+                </div>
+
+              <div class="Grid-cell
+                    u-lg-size2of3
+              " data-test-selector="ProfileTimeline">
+                  
+				  
+				  
+				  
+				  
+				  
+                    <div class="ProfileHeading">
+  <div class="ProfileHeading-spacer"></div>
+    <div class="ProfileHeading-content
+      ">
+      <h2 id="content-main-heading" class="ProfileHeading-title u-hiddenVisually ">Tweets</h2>
+        <ul class="ProfileHeading-toggle">
+            <li class="ProfileHeading-toggleItem
+              
+              is-active
+              " data-element-term="tweets_toggle">
+                Tweets
+            </li>
+           
+            
+        </ul>
+    </div>
+</div>
+
+                 
+                  
+
+
+
+
+  
+
+
+
+
+    <div id="timeline">
+        <div class="stream-container  " data-max-position="718137276782358528" data-min-position="626969673792385024">
+
+      <div class="stream-item js-new-items-bar-container">
+</div>
+
+    <div class="stream">
+        <ol class="stream-items js-navigable-stream" id="stream-items-id">
+          
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% for tweets in tweet %}
+
+
+      <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-type="tweet">
+      
+
+
+  
+
+  <div class="tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable
+       original-tweet js-original-tweet my-tweet has-cards" >
+
+
+    <div class="context">
+      
+      
+
+    </div>
+
+    <div class="content">
+      
+
+      
+      <div class="stream-item-header">
+          <a class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="{% url 'user_page' user.username %}" data-user-id="839102436">
+   {% for user_profile in profile %} <img class="avatar js-action-profile-avatar" src="{{ user_profile.image.url }}" alt="">{% endfor %}
+    <strong class="fullname js-action-profile-name show-popup-with-id" data-aria-label-part="">
+    {% for user_profile in profile %}{{ user_profile.name }}{% endfor %}</strong>
+    <span>‏</span><span class="username js-action-profile-name" data-aria-label-part=""><s>@</s><b>{{ request.user }}</b></span>
+    
+  </a>
+
+        <small class="time">
+  <a href="{% url 'tweet_detail' pk=tweets.pk %}" class="tweet-timestamp js-permalink js-nav js-tooltip" title="{{ tweets.published_date }}"><span class="_timestamp js-short-timestamp " data-aria-label-part="last" data-time="1454930496" data-time-ms="1454930496000" data-long-form="true">{{ tweets.published_date|date}}</span></a>
+</small>
+
+          
+          
+      </div>
+
+      
+        <div class="js-tweet-text-container">
+  <p class="TweetTextSize TweetTextSize--16px js-tweet-text tweet-text" data-aria-label-part="0" lang="en">{{ tweets.tweet }}</p>
+</div>
+
+
+
+
+      
+        
+
+      
+      
+ 
+
+      
+      <div class="stream-item-footer">
+  
+    
+<a class="details with-icn js-details" href="{% url 'tweet_detail' pk=tweets.pk%}">
+  <b>
+      <span class="expand-stream-item js-view-details">View summary</span>
+  </b>
+</a>
+
+
+  
+        
+
+   
+</div>
+  
+
+
+
+      
+      
+
+    </div>
+  </div>
+
+
+</li>
+
+      
+
+   {% endfor %}  
+     
+     
+
+        </ol>
+        <div class="stream-footer ">
+  <div class="timeline-end has-items has-more-items">
+    <div class="stream-end">
+  <div class="stream-end-inner">
+      <span class="Icon Icon--large Icon--logo"></span>
+
+    <p class="empty-text">
+        You haven't tweeted yet.
+
+    </p>
+
+          <p><button style="display: inline-block;" type="button" class="btn-link back-to-top hidden">Back to top ↑</button></p>
+
+  </div>
+</div>
+
+    <div class="stream-loading">
+  <div class="stream-end-inner">
+    <span class="spinner" title="Loading..."></span>
+  </div>
+</div>
+
+  </div>
+</div>
+
+
+     
+    </div>
+  </div>
+
+    </div>
+
+
+              </div>
+
+
+                  <div class="Grid-cell u-size1of3">
+                    <div class="Grid Grid--withGutter">
+                      <div class="Grid-cell">
+                        <div class="ProfileSidebar ProfileSidebar--withRightAlignment">
+                          
+                        <div class="MoveableModule">
+                            
+<div class="SidebarCommonModules">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="WhoToFollow  is-visible">
+  <div class="WhoToFollow-header">
+    <h3 class="WhoToFollow-title">Who to follow</h3>
+      ·
+      <button class="btn-link js-refresh-suggestions" type="button">Refresh</button>
+      ·
+    <a class="js-view-all-link" href="https://twitter.com/who_to_follow/suggestions" data-element-term="view_all_link">
+      View all
+    </a>
+  </div>
+
+  <div style="opacity: 1;" class="WhoToFollow-users js-recommended-followers" data-section-id="wtf">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+{% for twitter_users in twitter_user %}
+ 
+
+
+  <div class="js-account-summary account-summary js-actionable-user " data-user-id="24034540" data-feedback-token="110" data-impression-id="">
+  <div class="dismiss js-action-dismiss"><span class="Icon Icon--close"></span></div>
+  <div class="content">
+    <a class="account-group js-recommend-link js-user-profile-link user-thumb" href="" data-user-id="24034540">
+      
+      <img class="avatar js-action-profile-avatar " src="{{ twitter_user.image.url}}" alt="">
+      <span class="account-group-inner js-action-profile-name" data-user-id="24034540">
+        <b class="fullname"></b>
+        <span class="username"><s>@</s><span class="js-username"> </span> {{ twitter_users.username }}</span>
+      </span>
+    </a>
+
+    <small class="metadata social-context">
+    </small>
+      
+<div class="user-actions not-following not-muting" data-user-id="24034540">
+  <button type="button" class="small-follow-btn follow-btn btn small follow-button js-recommended-item">
+    <div class="js-action-follow follow-text action-text">
+      <span class="Icon Icon--follow"></span>
+      Follow
+    </div>
+    
+  </button>
+</div>
+
+  </div>
+</div>
+
+{% endfor %}
+
+
+</div>
+
+  <div class="WhoToFollow-footer">
+    <a href="https://twitter.com/who_to_follow/import" class="js-find-friends-link" data-element-term="import_link">Find friends</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="Footer module roaming-module
+            Footer--slim
+            Footer--blankBackground">
+  <div class="flex-module">
+    <div class="flex-module-inner js-items-container">
+      <ul class="u-cf">
+        <li class="Footer-item Footer-copyright copyright">© 2016 Twitter</li>
+        <li class="Footer-item"><a class="Footer-link" href="https://twitter.com/about">About</a></li>
+        <li class="Footer-item"><a class="Footer-link" href="https://support.twitter.com/">Help</a></li>
+        <li class="Footer-item"><a class="Footer-link" href="https://twitter.com/tos">Terms</a></li>
+        <li class="Footer-item"><a class="Footer-link" href="https://twitter.com/privacy">Privacy</a></li>
+        <li class="Footer-item"><a class="Footer-link" href="https://support.twitter.com/articles/20170514">Cookies</a></li>
+        <li class="Footer-item"><a class="Footer-link" href="https://support.twitter.com/articles/20170451">Ads info</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+
+                          </div>
+						  </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+     
+
+          </div>
+        </div>
+      
+    </div>
+   
+
+    
+
+
+
+ </body>
+ </html>

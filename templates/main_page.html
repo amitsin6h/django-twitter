@@ -1,0 +1,372 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 ie8" lang="en" data-scribe-reduced-action-queue="true"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="en" data-scribe-reduced-action-queue="true"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html data-scribe-reduced-action-queue="true" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    
+    
+    
+    
+    
+    
+    <meta charset="utf-8">
+    
+    
+    
+    
+  
+ 
+ 
+ 
+
+    <link rel="stylesheet" href="{% static 'css/twitter_core.css' %}">
+  <link rel="stylesheet" href="{% static 'css/twitter_more_1.css' %}">
+  <link rel="stylesheet" href="{% static 'css/twitter_more_2.css' %}">
+
+    <link rel="dns-prefetch" href="https://pbs.twimg.com/">
+    <link rel="dns-prefetch" href="https://t.co/">
+      <link rel="preload" href="{% static 'js/init.js' %}" as="script">
+      <link rel="preload" href="https://abs.twimg.com/c/swift/en/bundle/timeline.5efcd5a734c578acc6ba15992c4d107d96fb13ec.js" as="script">
+      <link rel="preload" href="https://abs.twimg.com/c/swift/en/bundle/boot.a2831f720818f83cd95a1d4a72645e4f9a4108d5.js" as="script">
+
+      <title>Django Twitter</title>
+      <meta name="robots" content="NOODP">
+  <meta name="description" content="Connect with your friends &amp;#8212; and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real time, from every angle.">
+
+
+
+<meta name="msapplication-TileImage" content="//abs.twimg.com/favicons/win8-tile-144.png">
+<meta name="msapplication-TileColor" content="#00aced">
+
+
+<link rel="mask-icon" sizes="any" href="https://abs.twimg.com/a/1459994215/img/t1/favicon.svg" color="#55acee">
+
+  <link href="https://abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+<link rel="manifest" href="https://twitter.com/manifest.json">
+
+
+  <meta name="swift-page-name" id="swift-page-name" content="streams">
+
+    
+
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://twitter.com/opensearch.xml" title="Twitter">
+
+    <link id="async-css-placeholder">
+
+      </head>
+    <body class="three-col logged-out Streams swift-loading" data-fouc-class-names="swift-loading" dir="ltr">
+
+  
+
+    <input class="swift-boot-module" value="app/pages/streams/tweet_forward" type="hidden">
+  <input id="swift-module-path" value="https://abs.twimg.com/c/swift/en" type="hidden">
+
+  
+    <script src="{% static 'js/init.js' %}" async=""></script>
+
+  
+  
+      <script id="swift_loading_indicator" nonce="g8A25yxA+Glyxq5K0iOx3Q==">
+        document.body.className=document.body.className+" "+document.body.getAttribute("data-fouc-class-names");
+      </script>
+	 
+	  
+    <div id="doc" class="">
+        <div class="StreamsTopBar-container StreamsTopBar-container--withStreamHero StreamsTopBar-container--withTallHeader">
+  <div class="StreamsTopBar StreamsTopBar--fixed js-variableHeightTopBar">
+    <div class="StreamsHero">
+      <div class="StreamsHero-image" style="background-image: url({% static 'img/lohp_streams_header_bg_v4.png' %});"></div>
+      <div class="StreamsHero-buttonContainer">
+
+        <a class="Button StreamsSignUp js-nav js-signup" data-component="hero" data-element="buttons" href="accounts/register/">Sign up</a>
+		<a class="Button StreamsLogin js-login" data-component="hero" data-element="buttons" href="accounts/login/">Log In</a>
+        
+      </div>
+      <div class="StreamsHero-content">
+        <h2 class="StreamsHero-header">Welcome to Django Twitter</h2>
+          <p class="StreamsHero-blurb">For those who loves to tweet !!</p>
+      </div>
+    </div>
+    <div class="StreamsTopBar-innerContainer">
+      <div class="StreamsCategoryBar">
+     
+    <div class="StreamsCategoryBar-item">
+      <div class="StreamsCategoryBar-itemInner">
+        <a class="StreamsCategoryBar-itemName u-linkClean js-nav" href="https://twitter.com/i/streams/category/687094923246440468" data-nav="687094923246440468">Latest Tweets</a>
+      </div>
+    </div>
+
+</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="AppContent" id="timeline">
+    
+    
+<div class="Grid TweetForwardTimeline" data-component-context="tweet" data-item-type="tweet" data-max-position="" data-min-position="%7B%22seenTweetIDs%22%3A%5B718876090903568384%2C719007013296967682%2C718557092966199297%2C718645838147235840%2C718762538482012160%2C718744411123765249%2C718653669638451201%2C718666833935511554%2C718833452863328256%2C718751231406026752%2C718687399543312384%2C718750544605478912%2C719002936521527297%2C718761858644094976%2C718664758904238080%2C718626343466840065%2C718740054974140416%2C718989566519042048%2C718703656141344768%2C718705518634635264%2C719001632873144320%5D%2C%22tweetsCursorOption%22%3A%7B%22minID%22%3A719008281900613632%2C%22maxID%22%3A719008281900613632%7D%7D">
+      
+  {% for tweets in tweet %}
+  <div class="Grid-cell u-size1of3">
+
+       <div class="TweetWithPivotModule" data-scribe-context="{&quot;id&quot;:&quot;687094923246440478&quot;,&quot;name&quot;:&quot;Politicians and Pol Parties&quot;,&quot;type&quot;:&quot;stream&quot;}">
+  <div class="TweetWithPivotModule-header">
+   
+  </div>
+    
+
+
+  
+
+  <div class="tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable
+       original-tweet js-original-tweet" >
+
+
+    <div class="context">
+      
+      
+
+    </div>
+
+    <div class="content">
+      
+        
+
+      
+      <div class="stream-item-header">
+          <a class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="{% url 'user_page' tweets.user %}" data-user-id="18839785">
+    <img class="avatar js-action-profile-avatar" src="Twitter_files/ypY1GPCQ_bigger.jpg" alt="">
+    <strong class="fullname js-action-profile-name show-popup-with-id" data-aria-label-part="">{{ tweets.user }}</strong>
+    <span>‏</span><span class="username js-action-profile-name" data-aria-label-part=""><s>@</s><b>{{ tweets.user }}</b></span>
+    
+  </a>
+
+        <small class="time">
+  <a href="https://twitter.com/narendramodi/status/719002936521527297" class="tweet-timestamp js-permalink js-nav js-tooltip"><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1460258633" data-time-ms="1460258633000" data-long-form="true" aria-hidden="true">{{ tweets.published_date|time}}</span></a>
+</small>
+
+          
+          
+      </div>
+
+      
+        <div class="js-tweet-text-container">
+  <p class="TweetTextSize  js-tweet-text tweet-text" data-aria-label-part="0" lang="en">{{ tweets.tweet }}</p>
+</div>
+
+
+
+
+      
+
+      
+      
+  <div class="expanded-content js-tweet-details-dropdown">
+    
+      
+  </div>
+
+
+  
+  
+
+
+
+      
+      
+
+    </div>
+  </div>
+
+
+    </div>
+      
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+    <!-- <div class="Grid-cell u-size1of3"> 
+	  <div class="TweetWithPivotModule" data-scribe-context="{&quot;id&quot;:&quot;692255459785383936&quot;,&quot;name&quot;:&quot;Books &amp; Authors&quot;,&quot;type&quot;:&quot;stream&quot;}">
+  <div class="TweetWithPivotModule-header">
+    <a href="https://twitter.com/i/streams/stream/692255459785383936" class="js-nav">Books &amp; Authors<span class="Icon Icon--caretRight"></span></a>
+  </div>
+    
+
+
+  
+
+  <div class="tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable
+       original-tweet js-original-tweet
+      
+       has-cards  has-content
+" data-tweet-id="718626343466840065" data-item-id="718626343466840065" data-permalink-path="/DalrympleWill/status/718626343466840065" data-screen-name="DalrympleWill" data-name="William Dalrymple" data-user-id="928219752" data-you-follow="false" data-follows-you="false" data-you-block="false" data-disclosure-type="" data-has-cards="true">
+
+
+    <div class="context">
+      
+      
+
+    </div>
+
+    <div class="content">
+      
+            <div class="AdaptiveMedia
+      
+      
+      is-square
+      
+      
+      ">
+    <div class="AdaptiveMedia-container
+        js-adaptive-media-container
+        ">
+        <div class="AdaptiveMedia-singlePhoto">
+    <div class="AdaptiveMedia-photoContainer js-adaptive-photo " data-image-url="https://pbs.twimg.com/media/CfkSv7aVIAA-bgC.jpg" data-element-context="platform_photo_card">
+  <img data-aria-label-part="" src="Twitter_files/CfkSv7aVIAA-bgC.jpg" alt="" style="width: 100%; top: -196px;">
+</div>
+
+
+</div>
+
+
+    </div>
+  </div>
+
+
+
+      
+      <div class="stream-item-header">
+          <a class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="https://twitter.com/DalrympleWill" data-user-id="928219752">
+    <img class="avatar js-action-profile-avatar" src="Twitter_files/3pRtqTs4_bigger.jpeg" alt="">
+    <strong class="fullname js-action-profile-name show-popup-with-id" data-aria-label-part="">William Dalrymple</strong>
+    <span>‏</span><span class="username js-action-profile-name" data-aria-label-part=""><s>@</s><b>DalrympleWill</b></span>
+    
+  </a>
+
+        <small class="time">
+  <a href="https://twitter.com/DalrympleWill/status/718626343466840065" class="tweet-timestamp js-permalink js-nav js-tooltip" title="7:27 PM - 8 Apr 2016"><span class="_timestamp js-short-timestamp " data-aria-label-part="last" data-time="1460168846" data-time-ms="1460168846000" data-long-form="true">Apr 8</span></a>
+</small>
+
+          
+          
+      </div>
+
+      
+        <div class="js-tweet-text-container">
+  <p class="TweetTextSize  js-tweet-text tweet-text" data-aria-label-part="0" lang="en">Head of the Buddha
+5thC from Hadda,  Afghanistan 
+Now in the Metropolitan Museum, New York<a href="https://t.co/2rnIDjd5Bz" class="twitter-timeline-link u-hidden" data-pre-embedded="true" dir="ltr">pic.twitter.com/2rnIDjd5Bz</a></p>
+</div>
+
+
+
+
+      
+
+      
+      
+  <div class="expanded-content js-tweet-details-dropdown">
+    <div class="js-tweet-details-fixer tweet-details-fixer">
+
+  <div class="js-machine-translated-tweet-container"></div>
+    <div class="js-tweet-stats-container tweet-stats-container ">
+    </div>
+
+  <div class="client-and-actions">
+  <span class="metadata">
+    <span>7:27 PM - 8 Apr 2016</span>
+       · <a class="permalink-link js-permalink js-nav" href="https://twitter.com/DalrympleWill/status/718626343466840065" tabindex="-1">Details</a>
+  </span>
+</div>
+
+
+</div>
+
+  </div>
+
+
+      
+  
+
+
+
+      
+      
+
+    </div>
+  </div>
+
+
+	</div>
+	</div>-->
+	</div>
+	
+{% endfor %}
+	
+	
+	
+	
+
+	
+  </div>
+
+
+      
+
+
+  </div>
+
+</div>
+
+<div class="StreamsFooter StreamsFooter--fixed">
+  <ul class="StreamsFooter-list u-cf">
+    <li class="StreamsFooter-item StreamsFooter-copyright" style="color: #2c2c2c;">© 2016 Django Twitter</li>
+  </ul>
+</div>
+
+
+      
+    </div>
+    
+
+    
+
+
+
+
+
+
+<div class="modal-overlay"></div>
+
+<div id="profile-hover-container"></div>
+
+
+
+ 
+
+  
+
+</body>
+</html>

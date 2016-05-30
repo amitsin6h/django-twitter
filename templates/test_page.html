@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List of Upload Pics</title>
+</head>
+<body>
+<h1>{{ user.username }}</h1>
+	{% for user_pic in profile %}
+	<img src='{{user_pic.image.url }}' width="150" height="150">
+	<h3> {{user_pic.name }}</h3>
+	<h3>{{ user_pic.dob }}</h3>
+	<h3>{{user_pic.age}}</h3>
+	<h3>{{ user_pic.school_college}}</h3>
+	{% endfor %}
+</body>
+</html>

@@ -1,0 +1,64 @@
+{% extends "login.html" %}
+{% load i18n %}
+
+{% block content %}
+ <div id="page-outer">
+          <div id="page-container" class="AppContent wrapper wrapper-login">
+              
+            <div class="page-canvas">
+
+  <div class="signin-wrapper" data-login-message="">
+    <h1>Log in to Django Twitter</h1>
+    <form  class="t1-form clearfix signin js-signin" method="post">{% csrf_token %}
+      <fieldset>
+
+  <legend class="visuallyhidden">Log in</legend>
+
+  <div class="clearfix field">
+    {{ form.username }}
+  </div>
+  <div class="clearfix field">
+    {{ form.password }}
+          
+  </div>
+
+  <input type="hidden">
+
+
+</fieldset>
+
+      <div class="captcha js-captcha">
+      </div>
+      <div class="clearfix">
+
+  <input name="scribe_log" type="hidden">
+  <input name="redirect_after_login" value="" type="hidden">
+  <input type="hidden" name="next" value="{% url 'user_tweet' %}">
+  <button type="submit" value="{% trans 'Log in' %}" class="submit btn primary-btn">Log in</button>
+
+  <div class="subchck">
+    <label class="t1-label remember">
+      <input  name="remember_me" checked="checked" type="checkbox">
+      Remember me
+      <span class="separator">·</span>
+      <a class="forgot" href="{% url 'auth_password_reset' %}">Forgot password?</a>
+    </label>
+  </div>
+</div>
+
+    </form>
+  </div>
+
+  <div class="clearfix mobile has-sms">
+    <p class="signup-helper">
+      New to Twitter?
+      <a id="login-signup-link" href="{% url 'registration_register' %}">Sign up now »</a>
+    </p>
+   
+  </div>
+
+</div>
+
+          </div>
+        </div>
+        {% endblock %}

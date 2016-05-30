@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Edit Profile | Django Twitter</title>
+		<!--Bootstarp-->
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		<!--HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+		<!--WARNING: Respond.js doesn't work if you view the page via file://-->
+		<!-- [if it IE 9]>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
+	</head>
+	<body>
+		<div class="jumbotron" >
+			<div class="conatiner">
+				<p class="text-center">
+				<img src="{% static 'img/qn18NLIw_400x400.jpg' %}" class="img-circle" width="180" height="180">
+				</p>
+				<p class="text-center"><a class="btn btn-primary btn-lg" role="button">Upload Image</a></p>
+			</div>
+		</div>
+		<form role="form">
+			<div class="form-group">
+				<div class="col-md-4">
+				
+					
+					<input type="text" class="form-control" placeholder="Name"></input>
+				</div>
+			</div>
+		</form>
+		
+		
+				
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+		<script src="{% static 'js/jquery.js' %}"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	</body>
+</html>

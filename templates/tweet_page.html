@@ -1,0 +1,14 @@
+
+<html>
+<body>
+	<h1>Welcome to twitter</h1>
+	<h3>Hello {{ user.username }}</h3>
+	<form method='POST'>{% csrf_token %}
+	<div class='tweet-box'>
+		
+<span placeholder='make your first tweet' id='tweet-filed'>{{ form.as_p}}</span>
+<button type='submit' value='tweet' id='tweet'>Save</button>
+</form>
+</div>
+</body>
+</html>
